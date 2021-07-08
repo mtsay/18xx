@@ -4,6 +4,7 @@
 require 'native'
 require 'json'
 require 'snabberb'
+require 'vega'
 require 'vendor/big'
 require 'vendor/polyfill'
 require 'vendor/message-bus'

@@ -99,6 +99,8 @@ module View
           h(Game::GameInfo, game: @game)
         when 'spreadsheet'
           h(Game::Spreadsheet, game: @game)
+        when 'chart'
+          h(Game::Chart, game: @game)
         when 'tools'
           h(Game::Tools, game: @game, game_data: @game_data, user: @user)
         when 'auto'
@@ -236,6 +238,8 @@ module View
           change_anchor('#tiles')
         when 's'
           change_anchor('#spreadsheet')
+        when 'h'
+          change_anchor('#chart')
         when 'o'
           change_anchor('#tools')
         when 'a'
@@ -313,6 +317,7 @@ module View
         item('I|nfo', '#info'),
         item('T|iles', '#tiles'),
         item('S|preadsheet', '#spreadsheet'),
+        item('Ch|art', '#chart'),
         item("To|ols#{' 📝' if note}", '#tools'),
       ]
 

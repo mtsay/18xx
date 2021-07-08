@@ -7,6 +7,7 @@ require 'zlib'
 
 require_relative 'engine'
 require_relative 'js_context'
+require_relative 'opal-vega'
 
 class Assets
   OUTPUT_BASE = 'public'
